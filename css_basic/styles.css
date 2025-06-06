@@ -1,1 +1,31 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  /* Ensures full viewport height */
+  margin: 0;
+  /* Remove default margin */
 
+}
+
+main{
+    display: flex; 
+    flex-direction: row;
+    flex: auto;
+    
+
+}
+
+article{
+    flex: 2;
+    overflow-y: auto;
+    padding: 1rem;
+    background-color : #ff9d;
+}
+
+aside{
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+   background-color: #eaeaea;
+}
