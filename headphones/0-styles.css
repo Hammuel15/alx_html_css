@@ -1,0 +1,163 @@
+/* === RESET === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* === VARIABLES === */
+  :root {
+    --main-color: #FF6565;
+    --white: #ffffff;
+    --font-main: 'Source Sans Pro', sans-serif;
+    --max-width: 1000px;
+  }
+  
+  /* === BASE === */
+  body {
+    font-family: var(--font-main);
+    color: var(--white);
+    background-color: #000;
+  }
+  
+  /* === HERO SECTION === */
+  .hero {
+    background-image: url("images/headphones_hero_1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+  
+  /* === NAVIGATION === */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    height: 30px;
+    z-index: 3;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: none;
+    font-size: 28px;
+    color: var(--white);
+    cursor: pointer;
+    z-index: 3;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: var(--white);
+    text-decoration: none;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a:active {
+    color: var(--main-color);
+  }
+  
+  /* === HERO TEXT === */
+  .hero-content {
+    margin-top: 60px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cta-button {
+    background-color: var(--main-color);
+    padding: 15px 30px;
+    border-radius: 20px;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button:hover {
+    opacity: 0.9;
+  }
+  
+  .hero-subtext {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  /* === RESPONSIVE === */
+  @media (max-width: 480px) {
+    .menu-icon {
+      display: block;
+      position: absolute;
+      left: 20px;
+      top: 25px;
+    }
+  
+    .logo {
+      margin: 0 auto;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.95);
+      padding: 20px 0;
+      text-align: center;
+      z-index: 2;
+    }
+  
+    #menu-toggle:checked+.menu-icon+.logo+.nav-links {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .hero-content h1 {
+      font-size: 1.5rem;
+    }
+  
+    .cta-button {
+      padding: 12px 24px;
+    }
+  }
