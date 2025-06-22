@@ -333,3 +333,135 @@
       width: 100%;
     }
   }
+
+  .footer {
+    background-color: #071629;
+    color: #ffffff;
+    padding: 40px 20px 20px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 20px;
+  }
+  
+  .footer .logo {
+    width: 120px;
+  }
+  
+  .footer-nav,
+  .footer-social {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-nav a,
+  .footer-social a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-nav a:hover {
+    color: #FF6565;
+  }
+  
+  .footer-social img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .footer-copy {
+    color: #ffffffa0;
+    font-size: 0.8rem;
+    margin-top: 10px;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 768px) {
+    .footer-top {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-nav,
+    .footer-social {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  .footer {
+    background-color: #071629;
+    color: #ffffff;
+    padding: 40px 20px 20px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 20px;
+  }
+  
+  .footer .logo {
+    width: 120px;
+  }
+  
+  .footer-nav,
+  .footer-social {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-nav a,
+  .footer-social a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-nav a:hover {
+    color: #FF6565;
+  }
+  
+  .footer-social img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .footer-copy {
+    color: #ffffffa0;
+    font-size: 0.8rem;
+    margin-top: 10px;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 768px) {
+    .footer-top {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-nav,
+    .footer-social {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  
